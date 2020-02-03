@@ -18,7 +18,7 @@ Add the dependency to your pom and start using it. There is no widgetset-compila
 </dependency>
 ```
 
-Details to the addon you can find on [Vaadin](https://vaadin.com/directory#addon/PdfThumbnails)
+Details to the addon you can find on [Vaadin](https://vaadin.com/directory/component/pdfthumbnails)
 
 The MIT License (MIT)
 -------------------------
