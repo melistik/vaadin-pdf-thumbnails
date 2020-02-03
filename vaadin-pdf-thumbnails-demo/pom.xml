@@ -63,7 +63,7 @@
         <dependency>
             <groupId>org.vaadin.addons</groupId>
             <artifactId>vaadin-pdf-thumbnails</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
