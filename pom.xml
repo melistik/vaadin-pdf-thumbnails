@@ -30,7 +30,7 @@
     </licenses>
 
     <properties>
-        <vaadin.version>8.0.3</vaadin.version>
+        <vaadin.version>8.9.3</vaadin.version>
         <project.source.version>1.8</project.source.version>
         <project.target.version>1.8</project.target.version>
         <project.encoding>UTF-8</project.encoding>
@@ -56,13 +56,6 @@
             <version>1.9.5</version>
         </dependency>
     </dependencies>
-
-    <scm>
-        <connection>scm:git:git@github.com:melistik/vaadin-pdf-thumbnails.git</connection>
-        <developerConnection>scm:git:git@github.com:melistik/vaadin-pdf-thumbnails.git</developerConnection>
-        <url>https://github.com/melistik/vaadin-pdf-thumbnails.git</url>
-        <tag>HEAD</tag>
-    </scm>
 
     <repositories>
         <repository>

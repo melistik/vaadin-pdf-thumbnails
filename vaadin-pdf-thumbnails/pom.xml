@@ -50,6 +50,13 @@
         </license>
     </licenses>
 
+    <scm>
+        <connection>scm:git:git@github.com:melistik/vaadin-pdf-thumbnails.git</connection>
+        <developerConnection>scm:git:git@github.com:melistik/vaadin-pdf-thumbnails.git</developerConnection>
+        <url>https://github.com/melistik/vaadin-pdf-thumbnails.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>com.vaadin</groupId>
