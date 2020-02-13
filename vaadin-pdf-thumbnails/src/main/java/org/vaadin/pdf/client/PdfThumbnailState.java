@@ -15,4 +15,6 @@ public class PdfThumbnailState extends JavaScriptComponentState {
     public String triggerRepaint = "1";
 
     public int previewWidth = 0, previewHeight = 0;
+
+    public boolean link;
 }

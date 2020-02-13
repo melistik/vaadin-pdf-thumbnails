@@ -18,16 +18,24 @@ window.org_vaadin_pdf_PdfThumbnail = function () {
       // remove all elements within elem
       elem.innerHTML = ''
 
-      pdfThumbElem = document.createElement('img')
-      pdfThumbElem.classList.add('pdf-thumb-elem')
-      pdfThumbElem.setAttribute('style', 'max-width: 100%; max-height: 100%;margin: 0 auto;display: inline-block;')
-      elem.appendChild(pdfThumbElem)
-
       var url = state.resources && state.resources.pdf
       if (typeof url !== 'undefined') {
         url = this.translateVaadinUri(url.uRL)
       } else {
         url = state.url
+      }
+
+      pdfThumbElem = document.createElement('img')
+      pdfThumbElem.classList.add('pdf-thumb-elem')
+      pdfThumbElem.setAttribute('style', 'max-width: 100%; max-height: 100%;margin: 0 auto;display: inline-block;')
+      if (state.link) {
+        var linkElem = document.createElement('a')
+        linkElem.setAttribute('href', url)
+        linkElem.setAttribute('target', '_blank')
+        linkElem.append(pdfThumbElem)
+        elem.appendChild(linkElem)
+      } else {
+        elem.appendChild(pdfThumbElem)
       }
 
       pdfjsLib.getDocument(url).then(function (pdf) {

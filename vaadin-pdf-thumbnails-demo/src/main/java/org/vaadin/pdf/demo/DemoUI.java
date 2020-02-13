@@ -5,6 +5,7 @@ import com.vaadin.server.StreamResource;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Notification;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import org.vaadin.pdf.PdfThumbnail;
@@ -38,15 +39,16 @@ public class DemoUI extends UI {
         layout.addComponent(new Button("DownloadResource", e -> {
             pdfThumbnail.setPreviewWidth(0);
             pdfThumbnail.setPreviewHeight(500);
-
+            pdfThumbnail.setLink(true);
+            Notification.show("Resource now with Link");
             pdfThumbnail.setResource(new DownloadStreamResource("https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"));
         }));
 
         layout.addComponent(new Button("Example embedded", e -> {
             pdfThumbnail.setPreviewWidth(400);
             pdfThumbnail.setPreviewHeight(0);
-
             pdfThumbnail.setUrl(exampleUrl);
+            pdfThumbnail.setLink(true);
         }));
     }
 

@@ -33,6 +33,7 @@ public class PdfThumbnail extends AbstractJavaScriptComponent {
      */
     public void setResource(final Resource resource) {
         setResource("pdf", resource);
+        triggerRepaint();
     }
 
     public void setPreviewWidth(int width) {
@@ -42,6 +43,11 @@ public class PdfThumbnail extends AbstractJavaScriptComponent {
 
     public void setPreviewHeight(int height) {
         getState().previewHeight = height;
+        triggerRepaint();
+    }
+
+    public void setLink(boolean enabled) {
+        getState().link = enabled;
         triggerRepaint();
     }
 
