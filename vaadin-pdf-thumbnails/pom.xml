@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.addons</groupId>
     <artifactId>vaadin-pdf-thumbnails</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>PdfThumbnails</name>
@@ -53,7 +53,7 @@
         <connection>scm:git:git@github.com:melistik/vaadin-pdf-thumbnails.git</connection>
         <developerConnection>scm:git:git@github.com:melistik/vaadin-pdf-thumbnails.git</developerConnection>
         <url>https://github.com/melistik/vaadin-pdf-thumbnails.git</url>
-        <tag>vaadin-pdf-thumbnails-1.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <dependencies>
